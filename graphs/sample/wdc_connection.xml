@@ -1,0 +1,10 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ssn="http://www.w3.org/ns/ssn/" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:iq="http://ontology.iquest.se/iq#">
+<iq:Connection rdf:about="https://REPLACE_WITH_MINER_NAME-0000.example.orbiq.se/connection/REPLACE_WITH_CONNECTION_UUID">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<rdfs:label>REPLACE_WITH_JOB_NAME-connection</rdfs:label>
+<iq:label>REPLACE_WITH_JOB_NAME-connection</iq:label>
+<ssn:implementedBy rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.example.orbiq.se/miner/REPLACE_WITH_MINER_UUID"/>
+<ssn:implements rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.example.orbiq.se/job/REPLACE_WITH_JOB_UUID"/>
+<rdfs:comment/>
+</iq:Connection>
+</rdf:RDF>

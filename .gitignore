@@ -1,0 +1,10 @@
+.vscode
+.idea
+
+target
+
+# Ignore all generated datasets, would take up too much space
+graphs/datasets/*
+
+# Ignore logs
+logs

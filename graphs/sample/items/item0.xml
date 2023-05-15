@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ssn="http://www.w3.org/ns/ssn/" xmlns:brick="http://brickschema.org/schema/Brick#"
+    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:iq="http://ontology.iquest.se/iq#">
+    <iq:Item
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <iq:hasUUID>b54a4943-1b0a-47ef-a415-1864e9d13f8a</iq:hasUUID>
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/job/REPLACE_WITH_JOB_UUID" />
+        <iq:sourceLabel>a2110.delaysignal01.di</iq:sourceLabel>
+        <iq:label>a2110.delaysignal01.di</iq:label>
+        <rdfs:label>a2110.delaysignal01.di</rdfs:label>
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <brick:hasPart
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Item>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>a2110.delaysignal01.di</iq:label>
+        <iq:sourceLabel>a2110.delaysignal01.di</iq:sourceLabel>
+        <iq:attributeType>Point</iq:attributeType>
+        <iq:hasTimeSeriesId>b54a4943-1b0a-47ef-a415-1864e9d13f8a</iq:hasTimeSeriesId>
+        <iq:hasValue>0</iq:hasValue>
+        <iq:latestRead>2023-03-08T09:55:44.888Z</iq:latestRead>
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>beskrivning</iq:label>
+        <iq:hasValue>A2116 GN51 N�rvarogivare indikering</iq:hasValue>
+        <iq:attributeType>Constant</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>fastighet</iq:label>
+        <iq:hasValue>0000</iq:hasValue>
+        <iq:attributeType>Constant</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>prio</iq:label>
+        <iq:hasValue>1</iq:hasValue>
+        <iq:attributeType>Comment</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>minable</iq:label>
+        <iq:hasValue>false</iq:hasValue>
+        <iq:attributeType>Comment</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>komponent</iq:label>
+        <iq:hasValue>GN51</iq:hasValue>
+        <iq:attributeType>Constant</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>rum</iq:label>
+        <iq:hasValue>2110</iq:hasValue>
+        <iq:attributeType>Constant</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>kalla</iq:label>
+        <iq:hasValue>0000-WDC</iq:hasValue>
+        <iq:attributeType>Constant</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>status</iq:label>
+        <iq:hasValue>2</iq:hasValue>
+        <iq:attributeType>Dynamic</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>matpunkt</iq:label>
+        <iq:hasValue>73</iq:hasValue>
+        <iq:attributeType>Constant</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>komponentid</iq:label>
+        <iq:hasValue>0000_GN51</iq:hasValue>
+        <iq:attributeType>Constant</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>enhet</iq:label>
+        <iq:hasValue>Fr�n,Till</iq:hasValue>
+        <iq:attributeType>Constant</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+    <iq:Attribute
+        rdf:about="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/devid">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual" />
+        <brick:isPartOf
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a" />
+        <iq:label>devid</iq:label>
+        <iq:hasValue>99900552/Farao/8</iq:hasValue>
+        <iq:attributeType>Dynamic</iq:attributeType>
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/beskrivning" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/fastighet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/prio" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/minable" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponent" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/rum" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/kalla" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/status" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/matpunkt" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/komponentid" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/enhet" />
+        <iq:isRelatedTo
+            rdf:resource="https://REPLACE_WITH_MINER_NAME-0000.customer.orbiq.se/item/b54a4943-1b0a-47ef-a415-1864e9d13f8a/point" />
+    </iq:Attribute>
+</rdf:RDF>

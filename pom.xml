@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>se.iquest</groupId>
+  <artifactId>stress-test</artifactId>
+  <version>0.1.0</version>
+  <packaging>jar</packaging>
+
+  <name>stress-test</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/com.openlinksw/virt_rdf4j_v2_1 -->
+    <dependency>
+        <groupId>com.openlinksw</groupId>
+        <artifactId>virt_rdf4j_v2_1</artifactId>
+        <version>1.8</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-repository-api -->
+    <dependency>
+        <groupId>org.eclipse.rdf4j</groupId>
+        <artifactId>rdf4j-repository-api</artifactId>
+        <version>2.5.5</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.openlinksw/virtjdbc4 -->
+    <dependency>
+        <groupId>com.openlinksw</groupId>
+        <artifactId>virtjdbc4_2</artifactId>
+        <version>3.122</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-rio-rdfxml -->
+    <dependency>
+        <groupId>org.eclipse.rdf4j</groupId>
+        <artifactId>rdf4j-rio-rdfxml</artifactId>
+        <version>2.5.5</version>
+    </dependency>
+    <dependency>
+        <groupId>com.mashape.unirest</groupId>
+        <artifactId>unirest-java</artifactId>
+        <version>1.4.9</version>
+    </dependency>
+    <dependency>
+       <groupId>com.squareup.okhttp</groupId>
+       <artifactId>okhttp</artifactId>
+       <version>2.7.5</version>
+    </dependency>
+  </dependencies>
+</project>
