@@ -4,6 +4,8 @@ import se.iquest.stresstest.miner.connections.HttpConnection;
 import se.iquest.stresstest.miner.exceptions.ConnectionErrorException;
 import se.iquest.stresstest.miner.exceptions.UploadErrorException;
 
+import org.eclipse.rdf4j.repository.RepositoryConnection;
+
 public abstract class GraphTransactionConnection extends HttpConnection
 {
     private String database;
@@ -54,6 +56,8 @@ public abstract class GraphTransactionConnection extends HttpConnection
      *             if the data could not be added within the transaction
      */
     public abstract void addData(String transactionID, String namedGraphURI, String graph) throws UploadErrorException;
+
+    public abstract void addData_2(String transactionID, String namedGraphURI, RepositoryConnection mem) throws UploadErrorException;
     
     /**
      * Commits a transaction

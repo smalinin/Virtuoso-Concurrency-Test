@@ -5,8 +5,10 @@ import java.io.StringReader;
 
 import org.eclipse.rdf4j.IsolationLevels;
 import org.eclipse.rdf4j.model.IRI;
+import org.eclipse.rdf4j.model.Statement;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.RepositoryException;
+import org.eclipse.rdf4j.repository.RepositoryResult;
 import org.eclipse.rdf4j.rio.RDFFormat;
 
 import se.iquest.stresstest.miner.exceptions.ConnectionErrorException;
@@ -234,6 +236,23 @@ public class GraphConnection extends GraphTransactionConnection
         }
     }
     
+    @Override
+    public void addData_2(String transactionID, String namedGraphURI, RepositoryConnection mem) throws UploadErrorException
+    {
+        try {
+            if (!isValidNamedGraphURI(namedGraphURI)) {
+                throw new IllegalArgumentException(String.format("Named graph URI cannot be: %s", namedGraphURI));
+            }
+            IRI context = this.getRepositoryConnection().getValueFactory().createIRI(namedGraphURI);
+            RepositoryResult<Statement> res = mem.getStatements(null, null, null, true);
+
+            System.out.println("Adding data to transaction " + transactionID + " for named graph \"" + namedGraphURI + "\"");
+            this.getRepositoryConnection().add(res, context);
+        } catch (Exception e) {
+            throw new UploadErrorException("Failed to upload graph", e);
+        }
+    }
+
     @Override
     public void clearData(String transactionID, String namedGraphURI) throws UploadErrorException
     {

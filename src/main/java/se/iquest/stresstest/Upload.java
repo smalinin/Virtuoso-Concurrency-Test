@@ -1,12 +1,18 @@
 package se.iquest.stresstest;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.eclipse.rdf4j.model.IRI;
+import org.eclipse.rdf4j.repository.Repository;
+import org.eclipse.rdf4j.repository.RepositoryConnection;
+import org.eclipse.rdf4j.repository.sail.SailRepository;
+import org.eclipse.rdf4j.rio.RDFFormat;
+import org.eclipse.rdf4j.sail.memory.MemoryStore;
 
 import se.iquest.stresstest.dataset.Dataset;
 import se.iquest.stresstest.miner.exceptions.ConnectionErrorException;
@@ -52,7 +58,8 @@ public class Upload
             
             // Clear existing data for named graph before adding new data
             connection.clearData(transactionID, namedGraphURI);
-            addData(transactionID, namedGraphURI, connection);
+            //??addData(transactionID, namedGraphURI, connection);
+            addData_2(transactionID, namedGraphURI, connection);
             connection.commitTransaction(transactionID);
         } catch (ConnectionErrorException cee) {
             System.err.println(
@@ -85,6 +92,21 @@ public class Upload
      * 
      * @throws UploadErrorException if the data could not be added within the transaction
      */
+    private void addData_2(String transactionID, String namedGraphURI, GraphConnection connection) throws UploadErrorException
+    {
+        System.out.println(String.format("Beginning to add data for named graph \"%s\"", namedGraphURI));
+        SailRepository m_repo = new SailRepository(new MemoryStore());
+        m_repo.init();
+        try (RepositoryConnection mconn = m_repo.getConnection()) {
+            IRI context = mconn.getValueFactory().createIRI(namedGraphURI);
+
+            readGraphsFromFile_2(Paths.get(this.dataset.getDatasetDirPath()), mconn, namedGraphURI, context);
+            connection.addData_2(transactionID, namedGraphURI, mconn);
+        } finally {
+            m_repo.shutDown();
+        }
+    }
+
     private void addData(String transactionID, String namedGraphURI, GraphConnection connection) throws UploadErrorException
     {
         System.out.println(String.format("Beginning to add data for named graph \"%s\"", namedGraphURI));
@@ -113,6 +135,32 @@ public class Upload
     }
     
     
+    private void readGraphsFromFile_2(Path graphsDirPath, RepositoryConnection con, String namedGraphURI, IRI context) {
+        // Read all files in the graphs directory
+        // and add the contents to a list of strings
+        // where each string is a graph
+        File graphsDir = graphsDirPath.toFile();
+
+        if (graphsDir.isDirectory()) {
+            File[] listOfFiles = graphsDir.listFiles();
+            
+            for (File file : listOfFiles) {
+                if (file.isFile()) {
+                    try (Reader in = new BufferedReader(new FileReader(file))){
+                        con.add(in, namedGraphURI, RDFFormat.RDFXML, context);
+                    } catch (IOException e) {
+                        System.err.println("Failed to read file " + file.getName());
+                        e.printStackTrace();
+                    }
+                } else if (file.isDirectory()) {
+                    readGraphsFromFile_2(file.toPath(), con, namedGraphURI, context);
+                } else {
+                    System.err.println("Unknown file type: " + file.getName());
+                }
+            }
+        }
+    }
+
     private List<String> readGraphsFromFile(Path graphsDirPath) {
         // Read all files in the graphs directory
         // and add the contents to a list of strings
