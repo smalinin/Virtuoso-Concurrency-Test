@@ -20,19 +20,21 @@ public class Main
         int nrOfUploads = 10;
         // How many client threads to start
         int nrOfThreads = 5;
-        
+
+        boolean commitAfterClear = true;
+
         LogManager.initLogging();
         
         removeOldDatasets();
         
         for (int i = 0; i < nrOfThreads; i++) {
-            startStressTestThread(address, port, nrOfUploads);
+            startStressTestThread(address, port, nrOfUploads, commitAfterClear);
         }
     }
     
-    private static void startStressTestThread(String address, int port, int nrOfUploads) throws FileNotFoundException
+    private static void startStressTestThread(String address, int port, int nrOfUploads, boolean commitAfterClear) throws FileNotFoundException
     {
-        StressTestClient stressTestClient = new StressTestClient(address, port, nrOfUploads);
+        StressTestClient stressTestClient = new StressTestClient(address, port, nrOfUploads, commitAfterClear);
         
         Thread thread = new Thread(stressTestClient);
         thread.setName("STClientThread" + thread.getId());

@@ -26,10 +26,13 @@ public class Upload
     private SailRepository m_repo;
     private String minerUUID;
     private String namedGraphURI;
+    private boolean commitAfterClear;
     
-    public Upload(String address, int port, Dataset dataset)
+    public Upload(String address, int port, Dataset dataset, boolean commitAfterClear)
     {
         this.dataset = dataset;
+        this.commitAfterClear = commitAfterClear;
+
         if (!Files.exists(Paths.get(dataset.getDatasetDirPath()))) {
             System.err.println("Dataset directory does not exist: " + dataset.getDatasetDirPath());
             System.exit(1);
@@ -73,6 +76,12 @@ public class Upload
             
             // Clear existing data for named graph before adding new data
             connection.clearData(transactionID, namedGraphURI);
+
+            if (commitAfterClear) {
+              connection.commitTransaction(transactionID);
+              transactionID = connection.beginTransaction();
+            }
+
             addData_2(transactionID, namedGraphURI, connection);
             connection.commitTransaction(transactionID);
         } catch (ConnectionErrorException cee) {
