@@ -73,7 +73,6 @@ public class Upload
             
             // Clear existing data for named graph before adding new data
             connection.clearData(transactionID, namedGraphURI);
-            //??addData(transactionID, namedGraphURI, connection);
             addData_2(transactionID, namedGraphURI, connection);
             connection.commitTransaction(transactionID);
         } catch (ConnectionErrorException cee) {
@@ -112,38 +111,12 @@ public class Upload
         System.out.println(String.format("Beginning to add data for named graph \"%s\"", namedGraphURI));
         try (RepositoryConnection mconn = m_repo.getConnection()) {
             connection.addData_2(transactionID, namedGraphURI, mconn);
+        } catch (UploadErrorException uee) {
+            System.err.println("Failed to add data for named graph " + namedGraphURI);
+            uee.printStackTrace();
         }
     }
 
-    private void addData_20(String transactionID, String namedGraphURI, GraphConnection connection) throws UploadErrorException
-    {
-        System.out.println(String.format("Beginning to add data for named graph \"%s\"", namedGraphURI));
-        SailRepository m_repo = new SailRepository(new MemoryStore());
-        m_repo.init();
-        try (RepositoryConnection mconn = m_repo.getConnection()) {
-            IRI context = mconn.getValueFactory().createIRI(namedGraphURI);
-
-            readGraphsFromFile_2(Paths.get(this.dataset.getDatasetDirPath()), mconn, namedGraphURI, context);
-            connection.addData_2(transactionID, namedGraphURI, mconn);
-        } finally {
-            m_repo.shutDown();
-        }
-    }
-
-    private void addData(String transactionID, String namedGraphURI, GraphConnection connection) throws UploadErrorException
-    {
-        System.out.println(String.format("Beginning to add data for named graph \"%s\"", namedGraphURI));
-        for (String graph : this.readGraphsFromFile(Paths.get(this.dataset.getDatasetDirPath()))) {
-            try {
-                connection.addData(transactionID, namedGraphURI, graph);
-                
-            } catch (UploadErrorException uee) {
-                System.err.println("Failed to add data for named graph " + namedGraphURI);
-                uee.printStackTrace();
-            }
-        }
-    }
-    
     /**
      * Rolls back a transaction with the given transaction ID
      */
@@ -184,32 +157,4 @@ public class Upload
         }
     }
 
-    private List<String> readGraphsFromFile(Path graphsDirPath) {
-        // Read all files in the graphs directory
-        // and add the contents to a list of strings
-        // where each string is a graph
-        
-        List<String> graphs = new ArrayList<>();
-        
-        File graphsDir = graphsDirPath.toFile();
-        if (graphsDir.isDirectory()) {
-            File[] listOfFiles = graphsDir.listFiles();
-            
-            for (File file : listOfFiles) {
-                if (file.isFile()) {
-                    try {
-                        graphs.add(new String(Files.readAllBytes(file.toPath())));
-                    } catch (IOException e) {
-                        System.err.println("Failed to read file " + file.getName());
-                        e.printStackTrace();
-                    }
-                } else if (file.isDirectory()) {
-                    graphs.addAll(readGraphsFromFile(file.toPath()));
-                } else {
-                    System.err.println("Unknown file type: " + file.getName());
-                }
-            }
-        }
-        return graphs;
-    }
 }
