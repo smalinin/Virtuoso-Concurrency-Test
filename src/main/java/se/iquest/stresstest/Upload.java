@@ -23,6 +23,9 @@ public class Upload
 {
     private final GraphConnection connection;
     private final Dataset dataset;
+    private SailRepository m_repo;
+    private String minerUUID;
+    private String namedGraphURI;
     
     public Upload(String address, int port, Dataset dataset)
     {
@@ -39,8 +42,23 @@ public class Upload
         connection.setUsername("dba");
         connection.setPassword("dba");
         connection.setDatabase("Whatever");
+
+        minerUUID = this.dataset.getMinerUUID();
+        namedGraphURI = ":" + minerUUID;
+
+        System.out.println(String.format("Prepare dataset \"%s\"", namedGraphURI));
+        m_repo = new SailRepository(new MemoryStore());
+        m_repo.init();
+
+        try (RepositoryConnection mconn = m_repo.getConnection()) {
+            IRI context = mconn.getValueFactory().createIRI(namedGraphURI);
+            readGraphsFromFile_2(Paths.get(this.dataset.getDatasetDirPath()), mconn, namedGraphURI, context);
+        }
+        System.out.println(String.format("Dataset was prepared"));
     }
     
+
+
     public void mine()
     {
         System.out.println(String.format(
@@ -51,9 +69,6 @@ public class Upload
         
         String transactionID = null;
         try {
-            String minerUUID = this.dataset.getMinerUUID();
-            String namedGraphURI = ":" + minerUUID;
-            
             transactionID = connection.beginTransaction();
             
             // Clear existing data for named graph before adding new data
@@ -93,6 +108,14 @@ public class Upload
      * @throws UploadErrorException if the data could not be added within the transaction
      */
     private void addData_2(String transactionID, String namedGraphURI, GraphConnection connection) throws UploadErrorException
+    {
+        System.out.println(String.format("Beginning to add data for named graph \"%s\"", namedGraphURI));
+        try (RepositoryConnection mconn = m_repo.getConnection()) {
+            connection.addData_2(transactionID, namedGraphURI, mconn);
+        }
+    }
+
+    private void addData_20(String transactionID, String namedGraphURI, GraphConnection connection) throws UploadErrorException
     {
         System.out.println(String.format("Beginning to add data for named graph \"%s\"", namedGraphURI));
         SailRepository m_repo = new SailRepository(new MemoryStore());
