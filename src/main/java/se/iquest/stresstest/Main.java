@@ -21,7 +21,7 @@ public class Main
         // How many client threads to start
         int nrOfThreads = 5;
 
-        boolean commitAfterClear = false;
+        boolean commitAfterClear = true;
 
         LogManager.initLogging();
         
