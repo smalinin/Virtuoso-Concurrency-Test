@@ -23,6 +23,8 @@ public abstract class GraphTransactionConnection extends HttpConnection
         this.database = database;
     }
     
+    public abstract void initializeConnection() throws ConnectionErrorException;
+
     /**
      * Begins a transaction
      * 

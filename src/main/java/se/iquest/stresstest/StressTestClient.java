@@ -9,20 +9,22 @@ public class StressTestClient implements Runnable
     private final int port;
     private final int nrOfUploads;
     private final boolean commitAfterClear;
+    private final boolean useAutoCommit;
     private Upload upload;
     
-    public StressTestClient(String address, int port, int nrOfUploads, boolean commitAfterClear)
+    public StressTestClient(String address, int port, int nrOfUploads, boolean commitAfterClear, boolean useAutoCommit)
     {
         this.address = address;
         this.port = port;
         this.nrOfUploads = nrOfUploads;
         this.commitAfterClear = commitAfterClear;
+        this.useAutoCommit = useAutoCommit;
     }
     
     public void setup()
     {
         Dataset dataset = DatasetHandler.createNewDataset();
-        this.upload = new Upload(address, port, dataset, commitAfterClear);
+        this.upload = new Upload(address, port, dataset, commitAfterClear, useAutoCommit);
     }
     
     @Override

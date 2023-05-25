@@ -22,19 +22,20 @@ public class Main
         int nrOfThreads = 5;
 
         boolean commitAfterClear = true;
+        boolean useAutoCommit = false;
 
         LogManager.initLogging();
         
         removeOldDatasets();
         
         for (int i = 0; i < nrOfThreads; i++) {
-            startStressTestThread(address, port, nrOfUploads, commitAfterClear);
+            startStressTestThread(address, port, nrOfUploads, commitAfterClear, useAutoCommit);
         }
     }
     
-    private static void startStressTestThread(String address, int port, int nrOfUploads, boolean commitAfterClear) throws FileNotFoundException
+    private static void startStressTestThread(String address, int port, int nrOfUploads, boolean commitAfterClear, boolean useAutoCommit) throws FileNotFoundException
     {
-        StressTestClient stressTestClient = new StressTestClient(address, port, nrOfUploads, commitAfterClear);
+        StressTestClient stressTestClient = new StressTestClient(address, port, nrOfUploads, commitAfterClear, useAutoCommit);
         
         Thread thread = new Thread(stressTestClient);
         thread.setName("STClientThread" + thread.getId());

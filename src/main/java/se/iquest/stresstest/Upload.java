@@ -27,11 +27,13 @@ public class Upload
     private String minerUUID;
     private String namedGraphURI;
     private boolean commitAfterClear;
+    private boolean useAutoCommit;
     
-    public Upload(String address, int port, Dataset dataset, boolean commitAfterClear)
+    public Upload(String address, int port, Dataset dataset, boolean commitAfterClear, boolean useAutoCommit)
     {
         this.dataset = dataset;
         this.commitAfterClear = commitAfterClear;
+        this.useAutoCommit = useAutoCommit;
 
         if (!Files.exists(Paths.get(dataset.getDatasetDirPath()))) {
             System.err.println("Dataset directory does not exist: " + dataset.getDatasetDirPath());
@@ -72,18 +74,23 @@ public class Upload
         
         String transactionID = null;
         try {
-            transactionID = connection.beginTransaction();
+            connection.initializeConnection();
+
+            if (!useAutoCommit)
+              transactionID = connection.beginTransaction();
             
             // Clear existing data for named graph before adding new data
             connection.clearData(transactionID, namedGraphURI);
 
-            if (commitAfterClear) {
+            if (!useAutoCommit && commitAfterClear) {
               connection.commitTransaction(transactionID);
               transactionID = connection.beginTransaction();
             }
 
             addData_2(transactionID, namedGraphURI, connection);
-            connection.commitTransaction(transactionID);
+
+            if (!useAutoCommit)
+              connection.commitTransaction(transactionID);
         } catch (ConnectionErrorException cee) {
             System.err.println(
                     String.format(
@@ -102,11 +109,13 @@ public class Upload
                             connection.getPort())
                     );
             uee.printStackTrace();
-            rollbackTransaction(connection, transactionID);
+            if (!useAutoCommit)
+              rollbackTransaction(connection, transactionID);
         } catch (Exception e) {
             System.err.println("Failed to export graphs");
             e.printStackTrace();
-            rollbackTransaction(connection, transactionID);
+            if (!useAutoCommit)
+              rollbackTransaction(connection, transactionID);
         }
     }
     

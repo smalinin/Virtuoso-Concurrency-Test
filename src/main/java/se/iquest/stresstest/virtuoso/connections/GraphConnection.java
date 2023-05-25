@@ -135,6 +135,12 @@ public class GraphConnection extends GraphTransactionConnection
     }
     
     @Override
+    public void initializeConnection() throws ConnectionErrorException
+    {
+        this.setupRepository();
+    }
+
+    @Override
     public String beginTransaction() throws ConnectionErrorException
     {
         this.setupRepository();
